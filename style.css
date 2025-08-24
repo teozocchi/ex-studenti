@@ -1,53 +1,73 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9; /* mi sego */
+    color: #333
+}
+
 .text{
-    font-family:'Times New Roman';
     text-align: center;
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 10px;
+    font-size: 1.1em; /* un po' più grande per una migliore leggibilità */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px; 
+    margin: 20px auto;
 }
+
 .title{
-    font-family:'Times New Roman';
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.5;
-    padding: 10px;
+    padding: 20px 10px;
+    background-color: #0d47a1; /* u bel blu istituzionale come esempio */
+    color: white;
 }
+
+.title h1 {
+    font-size: 2.2em; 
+    margin: 0;
+}
+
+.title p {
+    font-size: 1.1em;
+    margin: 5px 0 0 0;
+    font-weight: 300; 
+}
+
 nav {
     background: #f0f0f0;
+    padding: 15px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;           
+    justify-content: center;   /* centrta i pulsanti orizzontalmente cme ha fatto gabriel */
+    gap: 15px;                 
     margin: 0;
     padding: 0;
-}
-nav ul {
-    display: flex;                              /* uso flexbox per il layout */
-    justify-content: space-around;          /* distribuisco gli elementi in modo uniforme */
-    align-items: center;
-    width: 100%;
-    margin: 0;                              /* margine zero (non  si usa) */
-    padding: 10px 0;
     list-style: none;
 }
-nav ul li {
-    margin: 0;
-}
+
 nav ul li a {
     display: flex;
-    flex-direction: column;             /* orientamento verticale */
-    align-items: center;                /* allineamento orizzontale */
+    align-items: center;
     justify-content: center;
-    width: 150px;                           /* dimensione figura */
-    height: 100px;
-    background: #fff;                       /* sfondo bianco */
-    border-radius: 35%;
-    text-align: center;                     /* testo al centro della forma */
-    text-decoration: none;                  /* tolgo sottolinea */
+    min-width: 140px;          
+    padding: 25px 15px;        /*  padding per la dimensione, non height e width fisse */
+    background: #fff;
+    border-radius: 12px;      
+    text-align: center;
+    text-decoration: none;
     color: #333;
     font-weight: bold;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: background 0.3s, color 0.3s;                /*durata della transizione all'hover */ 
-    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease; /* trannsizione più fluida per tutti gli effetti */
+    font-size: 1em;
 }
-nav ul li a:hover {                         /* quando passo con il mouse zio pera */  
-    background: #e0e0e0;
-    color: #10549cc7;
+
+nav ul li a:hover {
+    background: #0d47a1;
+    color: white;
+    transform: translateY(-4px); /* mouse zio pera */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
