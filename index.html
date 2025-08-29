@@ -1,35 +1,314 @@
 <!DOCTYPE html>
-<html lang="it"> 
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Associazione Ex Allievi ITI Hensemberger Monza</title>
-    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
+    <div class="container">
+        <header>
         <div class="title">
             <h1>Associazione Ex Allievi ITI Hensemberger</h1>
-            <p>via Berchet, 2 - 20900 Monza (MB)</p>
+            <p>
+                <a href="https://maps.app.goo.gl/xFa68rqHwspCYe866" target="_blank">
+                    Via Berchet, 2 - 20900 Monza (MB)
+                </a>
+            </p>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contatti.html">Contatti</a></li>
-            <li><a href="link-utili.html">Link Utili</a></li>
-            <li><a href="iscrizioni-donazioni.html">Iscrizioni e Donazioni</a></li>
-            <li><a href="documenti.html">Documenti</a></li>
-            <li><a href="consiglio-direttivo.html">Consiglio Direttivo</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+                <li><a href="#" onclick="showPage('contatti')" id="nav-contatti">Contatti</a></li>
+                <li><a href="#" onclick="showPage('link-utili')" id="nav-link-utili">Link Utili</a></li>
+                <li><a href="#" onclick="showPage('iscrizioni-donazioni')" id="nav-iscrizioni-donazioni">Iscrizioni e Donazioni</a></li>
+                <li><a href="#" onclick="showPage('documenti')" id="nav-documenti">Documenti</a></li>
+                <li><a href="#" onclick="showPage('consiglio-direttivo')" id="nav-consiglio-direttivo">Consiglio Direttivo</a></li>
+            </ul>
+        </nav>
 
-    <section class="text">
-            <p>Sei un allievo dell'ITI Hensemberger e ti interessa darci un aiuto?</p>
-            <p>Sei un ex allievo dell'ITI Hensemberger da poco diplomato e vuoi mantenere alto il nome del nostro Istituto Tecnico?</p>
-            <p>Sei un ex allievo dell'ITI Hensemberger ed hai figli che ti piacerebbe portare all'istituto dove hai studiato?</p>
-            <p>Ecco l'associazione che fa per te. Nel nostro statuto che trovi nell'amministrazione trasparente, vogliamo promuovere l'attività dell'istituto, essere un vero tramite scuola / lavoro / mondo delle professioni e magari riuscire con il tuo aiuto a dare veramente un aiuto serio agli studenti più bisognosi con borse di studio di vario titolo.</p>
-    </section>
-</body>
-</html>
+        <!-- HOME PAGE -->
+        <div id="page-home" class="content">
+            <section class="text">
+                <h2 style="color: #0d47a1; margin-bottom: 30px; font-size: 2em;">Benvenuti nella nostra Associazione</h2>
+                
+                <div class="highlight">
+                    <h3 style="color: #0d47a1; margin-bottom: 20px;">Chi Siamo</h3>
+                    <p>L'Associazione Ex Allievi ITI Hensemberger è nata per mantenere vivo il legame tra tutti coloro che hanno frequentato il nostro prestigioso istituto tecnico.</p>
+                </div>
+
+                <p><strong>Sei un allievo dell'ITI Hensemberger</strong> e ti interessa darci un aiuto?</p>
+                <p><strong>Sei un ex allievo dell'ITI Hensemberger</strong> da poco diplomato e vuoi mantenere alto il nome del nostro Istituto Tecnico?</p>
+                <p><strong>Sei un ex allievo dell'ITI Hensemberger</strong> ed hai figli che ti piacerebbe portare all'istituto dove hai studiato?</p>
+                
+                <div class="highlight">
+                    <p><strong>Ecco l'associazione che fa per te!</strong> Nel nostro statuto vogliamo promuovere l'attività dell'istituto, essere un vero tramite scuola/lavoro/mondo delle professioni e riuscire con il tuo aiuto a dare un supporto concreto agli studenti più bisognosi con borse di studio di vario titolo.</p>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#" onclick="showPage('iscrizioni-donazioni')" class="cta-button">Iscriviti Ora</a>
+                    <a href="#" onclick="showPage('contatti')" class="cta-button">Contattaci</a>
+                    <a href="#" onclick="showPage('documenti')" class="cta-button">Documenti</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- CONTATTI PAGE -->
+        <div id="page-contatti" class="content page-hidden">
+            <h2 style="color: #0d47a1; margin-bottom: 30px; text-align: center; font-size: 2em;">Contatti</h2>
+            
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📧 Email</h3>
+                    <p><strong>exallievi.hensemberger@gmail.com</strong></p>
+                    <p>Per informazioni generali e iscrizioni</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📞 Telefono</h3>
+                    <p><strong>+39 039 2396711</strong></p>
+                    <p>Lunedì - Venerdì: 9:00 - 17:00</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📍 Indirizzo</h3>
+                    <p><strong>via Berchet, 2</strong></p>
+                    <p>20900 Monza (MB)</p>
+                    <p>Lombardia, Italia</p>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 30px; border-radius: 15px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">Scrivici</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome e Cognome *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-contatto">Email *</label>
+                        <input type="email" id="email-contatto" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="anno-diploma">Anno di Diploma</label>
+                        <input type="number" id="anno-diploma" name="anno_diploma" min="1950" max="2025">
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio *</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Invia Messaggio</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- LINK UTILI PAGE -->
+        <div id="page-link-utili" class="content page-hidden">
+            <h2 style="color: #0d47a1; margin-bottom: 30px; text-align: center; font-size: 2em;">Link Utili</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🏫 Istituto Tecnico</h3>
+                    <p><a href="https://www.itishensemberger.edu.it" target="_blank" style="color: #0d47a1;">ITI Hensemberger - Sito Ufficiale</a></p>
+                    <p>Il sito ufficiale del nostro istituto con tutte le informazioni sui corsi e le attività.</p>
+                </div>
+                
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">💼 Mondo del Lavoro</h3>
+                    <p><a href="https://www.linkedin.com" target="_blank" style="color: #0d47a1;">LinkedIn</a></p>
+                    <p><a href="https://www.indeed.it" target="_blank" style="color: #0d47a1;">Indeed Italia</a></p>
+                    <p><a href="https://www.infojobs.it" target="_blank" style="color: #0d47a1;">InfoJobs</a></p>
+                </div>
+                
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📚 Formazione Continua</h3>
+                    <p><a href="https://www.coursera.org" target="_blank" style="color: #0d47a1;">Coursera</a></p>
+                    <p><a href="https://www.edx.org" target="_blank" style="color: #0d47a1;">edX</a></p>
+                    <p><a href="https://www.udemy.com" target="_blank" style="color: #0d47a1;">Udemy</a></p>
+                </div>
+                
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🏛️ Istituzioni</h3>
+                    <p><a href="https://www.miur.gov.it" target="_blank" style="color: #0d47a1;">Ministero dell'Istruzione</a></p>
+                    <p><a href="https://www.regione.lombardia.it" target="_blank" style="color: #0d47a1;">Regione Lombardia</a></p>
+                    <p><a href="https://www.comune.monza.it" target="_blank" style="color: #0d47a1;">Comune di Monza</a></p>
+                </div>
+                
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🔧 Risorse Tecniche</h3>
+                    <p><a href="https://github.com" target="_blank" style="color: #0d47a1;">GitHub</a></p>
+                    <p><a href="https://stackoverflow.com" target="_blank" style="color: #0d47a1;">Stack Overflow</a></p>
+                    <p><a href="https://www.arduino.cc" target="_blank" style="color: #0d47a1;">Arduino</a></p>
+                </div>
+                
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🎓 Università Partner</h3>
+                    <p><a href="https://www.polimi.it" target="_blank" style="color: #0d47a1;">Politecnico di Milano</a></p>
+                    <p><a href="https://www.unimib.it" target="_blank" style="color: #0d47a1;">Università Milano-Bicocca</a></p>
+                    <p><a href="https://www.liuc.it" target="_blank" style="color: #0d47a1;">Università LIUC</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ISCRIZIONI E DONAZIONI PAGE -->
+        <div id="page-iscrizioni-donazioni" class="content page-hidden">
+            <h2 style="color: #0d47a1; margin-bottom: 30px; text-align: center; font-size: 2em;">Iscrizioni e Donazioni</h2>
+            
+            <div class="highlight" style="text-align: center; margin-bottom: 30px;">
+                <h3 style="color: #0d47a1; margin-bottom: 15px;">Sostieni la nostra missione</h3>
+                <p>Con la tua iscrizione o donazione aiuti a mantenere vivo il legame tra passato e futuro dell'ITI Hensemberger, supportando progetti educativi e borse di studio per gli studenti meritevoli.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+                <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">💳 Iscrizione Associazione</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome-iscrizione">Nome e Cognome *</label>
+                            <input type="text" id="nome-iscrizione" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-iscrizione">Email *</label>
+                            <input type="email" id="email-iscrizione" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        <div class="form-group">
+                            <label for="anno-diploma-iscr">Anno di Diploma *</label>
+                            <input type="number" id="anno-diploma-iscr" name="anno_diploma" min="1950" max="2025" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="specializzazione">Specializzazione</label>
+                            <select id="specializzazione" name="specializzazione">
+                                <option value="">Seleziona...</option>
+                                <option value="informatica">Informatica</option>
+                                <option value="elettronica">Elettronica</option>
+                                <option value="meccanica">Meccanica</option>
+                                <option value="chimica">Chimica</option>
+                                <option value="altro">Altro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="professione">Professione Attuale</label>
+                            <input type="text" id="professione" name="professione">
+                        </div>
+                        <div class="form-group">
+                            <label for="quota-iscrizione">Quota di Iscrizione *</label>
+                            <select id="quota-iscrizione" name="quota" required>
+                                <option value="">Seleziona...</option>
+                                <option value="25">€ 25,00 - Quota Standard</option>
+                                <option value="50">€ 50,00 - Quota Sostenitore</option>
+                                <option value="100">€ 100,00 - Quota Benefattore</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary">Procedi con l'Iscrizione</button>
+                    </form>
+                </div>
+
+                <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">❤️ Donazione Libera</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="nome-donazione">Nome e Cognome *</label>
+                            <input type="text" id="nome-donazione" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-donazione">Email *</label>
+                            <input type="email" id="email-donazione" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="importo-donazione">Importo Donazione *</label>
+                            <select id="importo-donazione" name="importo" required>
+                                <option value="">Seleziona...</option>
+                                <option value="25">€ 25,00</option>
+                                <option value="50">€ 50,00</option>
+                                <option value="100">€ 100,00</option>
+                                <option value="250">€ 250,00</option>
+                                <option value="500">€ 500,00</option>
+                                <option value="altro">Altro importo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="importo-personalizzato">Importo Personalizzato (€)</label>
+                            <input type="number" id="importo-personalizzato" name="importo_custom" min="1" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="destinazione">Destinazione Donazione</label>
+                            <select id="destinazione" name="destinazione">
+                                <option value="generale">Fondo Generale</option>
+                                <option value="borse-studio">Borse di Studio</option>
+                                <option value="laboratori">Laboratori e Attrezzature</option>
+                                <option value="eventi">Eventi e Attività</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="messaggio-donazione">Messaggio (opzionale)</label>
+                            <textarea id="messaggio-donazione" name="messaggio" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Procedi con la Donazione</button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 30px; border-radius: 15px; margin-top: 30px; text-align: center;">
+                <h3 style="color: #0d47a1; margin-bottom: 20px;">💰 Coordinate Bancarie</h3>
+                <p><strong>Intestatario:</strong> Associazione Ex Allievi ITI Hensemberger</p>
+                <p><strong>IBAN:</strong> <span style="font-family: monospace; background: white; padding: 5px 10px; border-radius: 5px;">IT60 X054 2811 1010 0000 0123 456</span></p>
+                <p><strong>BIC/SWIFT:</strong> BPMIIT3XXXX</p>
+                <p style="margin-top: 20px; font-size: 0.9em; color: #666;">
+                    * Le coordinate bancarie definitive verranno fornite dall'associazione<br>
+                    ** Ricordati di inserire come causale: "Iscrizione/Donazione + Nome Cognome"
+                </p>
+            </div>
+        </div>
+
+        <!-- DOCUMENTI PAGE -->
+        <div id="page-documenti" class="content page-hidden">
+            <h2 style="color: #0d47a1; margin-bottom: 30px; text-align: center; font-size: 2em;">Documenti</h2>
+            
+            <div class="highlight" style="text-align: center; margin-bottom: 30px;">
+                <p>In questa sezione puoi scaricare tutti i documenti ufficiali dell'Associazione Ex Allievi ITI Hensemberger.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📋 Documenti Statutari</h3>
+                    <div class="document-item">
+                        <span>Statuto dell'Associazione</span>
+                        <a href="#" onclick="downloadDocument('statuto')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Atto Costitutivo</span>
+                        <a href="#" onclick="downloadDocument('atto-costitutivo')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Regolamento Interno</span>
+                        <a href="#" onclick="downloadDocument('regolamento')">Scarica PDF</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">💼 Amministrazione Trasparente</h3>
+                    <div class="document-item">
+                        <span>Bilancio 2024</span>
+                        <a href="#" onclick="downloadDocument('bilancio-2024')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Bilancio 2023</span>
+                        <a href="#" onclick="downloadDocument('bilancio-2023')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Relazione Attività 2024</span>
+                        <a href="#" onclick="downloadDocument('relazione-2024')">Scarica PDF</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📝 Moduli e Richieste</h3>
+                    <div class="document-item">
+                        <span>Modulo Iscrizione</span>
+                        <a href="#" onclick="downloadDocument('modulo-is
