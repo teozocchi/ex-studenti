@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Associazione Ex Allievi ITI Hensemberger Monza</title>
+    
 </head>
 <body>
     <div class="container">
         <header>
-        <div class="title">
-            <h1>Associazione Ex Allievi ITI Hensemberger</h1>
-            <p>
-                <a href="https://maps.app.goo.gl/xFa68rqHwspCYe866" target="_blank">
-                    Via Berchet, 2 - 20900 Monza (MB)
-                </a>
-            </p>
-        </div>
-    </header>
+            <div class="title">
+                <h1>Associazione Ex Allievi ITI Hensemberger</h1>
+                <p>
+                    <a href="https://maps.app.goo.gl/xFa68rqHwspCYe866" target="_blank">
+                        Via Berchet, 2 - 20900 Monza (MB)
+                    </a>
+                </p>
+            </div>
+        </header>
 
         <nav>
             <ul>
@@ -61,19 +62,19 @@
             
             <div class="contact-info">
                 <div class="contact-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📧 Email</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">📧 Email</h3>
                     <p><strong>exallievi.hensemberger@gmail.com</strong></p>
                     <p>Per informazioni generali e iscrizioni</p>
                 </div>
                 
                 <div class="contact-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📞 Telefono</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">📞 Telefono</h3>
                     <p><strong>+39 039 2396711</strong></p>
                     <p>Lunedì - Venerdì: 9:00 - 17:00</p>
                 </div>
                 
                 <div class="contact-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📍 Indirizzo</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">📍 Indirizzo</h3>
                     <p><strong>via Berchet, 2</strong></p>
                     <p>20900 Monza (MB)</p>
                     <p>Lombardia, Italia</p>
@@ -82,7 +83,7 @@
 
             <div style="background: white; padding: 30px; border-radius: 15px; margin-top: 30px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
                 <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">Scrivici</h3>
-                <form>
+                <form onsubmit="handleContactForm(event)">
                     <div class="form-group">
                         <label for="nome">Nome e Cognome *</label>
                         <input type="text" id="nome" name="nome" required>
@@ -110,44 +111,44 @@
             
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🏫 Istituto Tecnico</h3>
-                    <p><a href="https://www.itishensemberger.edu.it" target="_blank" style="color: #0d47a1;">ITI Hensemberger - Sito Ufficiale</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">🏫 Istituto Tecnico</h3>
+                    <p><a href="https://www.itishensemberger.edu.it" target="_blank" style="color: white;">ITI Hensemberger - Sito Ufficiale</a></p>
                     <p>Il sito ufficiale del nostro istituto con tutte le informazioni sui corsi e le attività.</p>
                 </div>
                 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">💼 Mondo del Lavoro</h3>
-                    <p><a href="https://www.linkedin.com" target="_blank" style="color: #0d47a1;">LinkedIn</a></p>
-                    <p><a href="https://www.indeed.it" target="_blank" style="color: #0d47a1;">Indeed Italia</a></p>
-                    <p><a href="https://www.infojobs.it" target="_blank" style="color: #0d47a1;">InfoJobs</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">💼 Mondo del Lavoro</h3>
+                    <p><a href="https://www.linkedin.com" target="_blank" style="color: white;">LinkedIn</a></p>
+                    <p><a href="https://www.indeed.it" target="_blank" style="color: white;">Indeed Italia</a></p>
+                    <p><a href="https://www.infojobs.it" target="_blank" style="color: white;">InfoJobs</a></p>
                 </div>
                 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📚 Formazione Continua</h3>
-                    <p><a href="https://www.coursera.org" target="_blank" style="color: #0d47a1;">Coursera</a></p>
-                    <p><a href="https://www.edx.org" target="_blank" style="color: #0d47a1;">edX</a></p>
-                    <p><a href="https://www.udemy.com" target="_blank" style="color: #0d47a1;">Udemy</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">📚 Formazione Continua</h3>
+                    <p><a href="https://www.coursera.org" target="_blank" style="color: white;">Coursera</a></p>
+                    <p><a href="https://www.edx.org" target="_blank" style="color: white;">edX</a></p>
+                    <p><a href="https://www.udemy.com" target="_blank" style="color: white;">Udemy</a></p>
                 </div>
                 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🏛️ Istituzioni</h3>
-                    <p><a href="https://www.miur.gov.it" target="_blank" style="color: #0d47a1;">Ministero dell'Istruzione</a></p>
-                    <p><a href="https://www.regione.lombardia.it" target="_blank" style="color: #0d47a1;">Regione Lombardia</a></p>
-                    <p><a href="https://www.comune.monza.it" target="_blank" style="color: #0d47a1;">Comune di Monza</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">🏛️ Istituzioni</h3>
+                    <p><a href="https://www.miur.gov.it" target="_blank" style="color: white;">Ministero dell'Istruzione</a></p>
+                    <p><a href="https://www.regione.lombardia.it" target="_blank" style="color: white;">Regione Lombardia</a></p>
+                    <p><a href="https://www.comune.monza.it" target="_blank" style="color: white;">Comune di Monza</a></p>
                 </div>
                 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🔧 Risorse Tecniche</h3>
-                    <p><a href="https://github.com" target="_blank" style="color: #0d47a1;">GitHub</a></p>
-                    <p><a href="https://stackoverflow.com" target="_blank" style="color: #0d47a1;">Stack Overflow</a></p>
-                    <p><a href="https://www.arduino.cc" target="_blank" style="color: #0d47a1;">Arduino</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">🔧 Risorse Tecniche</h3>
+                    <p><a href="https://github.com" target="_blank" style="color: white;">GitHub</a></p>
+                    <p><a href="https://stackoverflow.com" target="_blank" style="color: white;">Stack Overflow</a></p>
+                    <p><a href="https://www.arduino.cc" target="_blank" style="color: white;">Arduino</a></p>
                 </div>
                 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">🎓 Università Partner</h3>
-                    <p><a href="https://www.polimi.it" target="_blank" style="color: #0d47a1;">Politecnico di Milano</a></p>
-                    <p><a href="https://www.unimib.it" target="_blank" style="color: #0d47a1;">Università Milano-Bicocca</a></p>
-                    <p><a href="https://www.liuc.it" target="_blank" style="color: #0d47a1;">Università LIUC</a></p>
+                    <h3 style="color: white; margin-bottom: 15px;">🎓 Università Partner</h3>
+                    <p><a href="https://www.polimi.it" target="_blank" style="color: white;">Politecnico di Milano</a></p>
+                    <p><a href="https://www.unimib.it" target="_blank" style="color: white;">Università Milano-Bicocca</a></p>
+                    <p><a href="https://www.liuc.it" target="_blank" style="color: white;">Università LIUC</a></p>
                 </div>
             </div>
         </div>
@@ -164,7 +165,7 @@
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
                 <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
                     <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">💳 Iscrizione Associazione</h3>
-                    <form>
+                    <form onsubmit="handleRegistrationForm(event)">
                         <div class="form-group">
                             <label for="nome-iscrizione">Nome e Cognome *</label>
                             <input type="text" id="nome-iscrizione" name="nome" required>
@@ -211,7 +212,7 @@
 
                 <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
                     <h3 style="color: #0d47a1; margin-bottom: 20px; text-align: center;">❤️ Donazione Libera</h3>
-                    <form>
+                    <form onsubmit="handleDonationForm(event)">
                         <div class="form-group">
                             <label for="nome-donazione">Nome e Cognome *</label>
                             <input type="text" id="nome-donazione" name="nome" required>
@@ -222,7 +223,7 @@
                         </div>
                         <div class="form-group">
                             <label for="importo-donazione">Importo Donazione *</label>
-                            <select id="importo-donazione" name="importo" required>
+                            <select id="importo-donazione" name="importo" required onchange="toggleCustomAmount()">
                                 <option value="">Seleziona...</option>
                                 <option value="25">€ 25,00</option>
                                 <option value="50">€ 50,00</option>
@@ -232,7 +233,7 @@
                                 <option value="altro">Altro importo</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="custom-amount-group" style="display: none;">
                             <label for="importo-personalizzato">Importo Personalizzato (€)</label>
                             <input type="number" id="importo-personalizzato" name="importo_custom" min="1" step="0.01">
                         </div>
@@ -276,7 +277,7 @@
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📋 Documenti Statutari</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">📋 Documenti Statutari</h3>
                     <div class="document-item">
                         <span>Statuto dell'Associazione</span>
                         <a href="#" onclick="downloadDocument('statuto')">Scarica PDF</a>
@@ -292,7 +293,7 @@
                 </div>
 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">💼 Amministrazione Trasparente</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">💼 Amministrazione Trasparente</h3>
                     <div class="document-item">
                         <span>Bilancio 2024</span>
                         <a href="#" onclick="downloadDocument('bilancio-2024')">Scarica PDF</a>
@@ -308,7 +309,20 @@
                 </div>
 
                 <div class="member-card">
-                    <h3 style="color: #0d47a1; margin-bottom: 15px;">📝 Moduli e Richieste</h3>
+                    <h3 style="color: white; margin-bottom: 15px;">📝 Moduli e Richieste</h3>
                     <div class="document-item">
                         <span>Modulo Iscrizione</span>
-                        <a href="#" onclick="downloadDocument('modulo-is
+                        <a href="#" onclick="downloadDocument('modulo-iscrizione')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Modulo Donazione</span>
+                        <a href="#" onclick="downloadDocument('modulo-donazione')">Scarica PDF</a>
+                    </div>
+                    <div class="document-item">
+                        <span>Richiesta Borsa di Studio</span>
+                        <a href="#" onclick="downloadDocument('modulo-borsa')">Scarica PDF</a>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <h3 style="color: white; margin-bottom: 15px;">📊
