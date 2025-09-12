@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consiglio d'Istituto - Associazione Ex Allievi ITI Hensemberger</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .member-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Spazio tra icona e testo */
+        }
+
+        .member-card ul {
+            list-style: none;
+            padding-left: 0;
+            text-align: left;
+        }
+
+        .member-card li {
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .member-card li:last-child {
+            border-bottom: none;
+        }
+        
+        /* aiuto */
+        .card-director {
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+        }
+        .card-docente {
+            background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
+        }
+        .card-non-docente {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        .card-genitori {
+            background: linear-gradient(135deg, #c31432 0%, #240b36 100%);
+        }
+        .card-studenti {
+            background: linear-gradient(135deg, #ff8008 0%, #ffc837 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1>Associazione Ex Allievi ITI Hensemberger</h1>
+                <p><a href="https://maps.app.goo.gl/xFa68rqHHwspCYe866" target="_blank">Via Berchet, 2 - 20900 Monza (MB)</a></p>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="link-utili.html">Link Utili</a></li>
+                <li><a href="iscrizioni.html">Iscrizioni e Donazioni</a></li>
+                <li><a href="documenti.html">Documenti</a></li>
+                <li><a href="consiglio.html" class="active">Consiglio Direttivo</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="text" style="text-align: center; margin-bottom: 40px;">
+                <h2 style="color: #0d47a1; font-size: 2.2em;">Consiglio d'Istituto</h2>
+            </div>
+            
+            <!-- Sezione Dirigente Scolastico -->
+            <div style="display: flex; justify-content: center; margin-bottom: 40px; text-align: center;">
+                <div class="member-card card-director" style="max-width: 400px;">
+                    <h3>🧑‍🏫 Dirigente Scolastico</h3>
+                    <p style="font-size: 1.2em;">P. Ieracitano</p>
+                </div>
+            </div>
+
+            <!-- Griglia con le componenti -->
+            <div class="contact-info">
+                <div class="member-card card-docente">
+                    <h3>👥 Componente Docente</h3>
+                    <ul>
+                        <li>V. Bortone</li>
+                        <li>A. M. Volpi</li>
+                        <li>D. Caruso</li>
+                        <li>P. Angelo</li>
+                        <li>F. Macheda</li>
+                        <li>N. Pavesi</li>
+                        <li>S. Nannelli</li>
+                        <li>S. Oliva</li>
+                    </ul>
+                </div>
+
+                <div class="member-card card-non-docente">
+                    <h3>💼 Componente Non Docente</h3>
+                    <ul>
+                        <li>G. Chirico (AA*)</li>
+                        <li>G. Di Giovanni (AA*)</li>
+                    </ul>
+                </div>
+
+                <div class="member-card card-genitori">
+                    <h3>👨‍👩‍👧‍👦 Componente Genitori</h3>
+                    <ul>
+                        <li>P. Pirola</li>
+                        <li>M. R. Campanella</li>
+                    </ul>
+                </div>
+
+                <div class="member-card card-studenti">
+                    <h3>🎓 Componente Studenti</h3>
+                    <ul>
+                        <li><em>In fase di aggiornamento</em></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text" style="margin-top: 30px; text-align: right;">
+                <p><strong>(*)</strong> Assistente Amministrativo</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
